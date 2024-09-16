@@ -1,0 +1,60 @@
+.colorSelectionDiv {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 12px;
+
+  .btn {
+    color: #333;
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(138, 198, 216, .75);
+      position: relative;
+      border-color: #0d6efd;
+    }
+  }
+
+  .highlightColorPreview {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .fontColorPreview {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .colorSelectionTitle {
+    padding-right: 6px;
+    color: #666;
+  }
+}
+
+
+.colorRoot:not(:last-child ) {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ebebeb;
+  padding-bottom: 15px;
+}
+
+.colorTitle {
+  font-size: 14px;
+  width: 100%;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+.singleColorRoot {
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+}
+
+.colorTiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  //margin-bottom: 15px;
+}

@@ -1,0 +1,66 @@
+@import "src/globals/styles/styles-lg";
+
+.bn6 {
+  background-color: $cn6;
+}
+
+.cn2 {
+  color: $cn2;
+}
+
+.cs2 {
+  color: $cs2;;
+}
+
+.bp2 {
+  background-color: $cp2;
+}
+
+
+.tagRoot {
+  display: flex;
+  justify-content: space-between;
+  /* Spread items across the container */
+  gap: 15px;
+  /* Spacing between child elements */
+  align-items: center;
+  /* Vertically center items within the tag */
+  /* Padding around tag content */
+  border-radius: 4px;
+  /* Rounded corners for the tag */
+  width: fit-content;
+  /* Adjust the width based on content */
+  padding: 0 0 0 10px;
+
+  /* Media query for screens with a maximum width of 733px */
+  @media (max-width: 733px) {
+    height: 16px;
+    /* height of small tags */
+  }
+
+  /* Styles for the .closeIcon class */
+  .closeIcon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.small {
+  height: 16px;
+  font-size: $fMin;
+  padding: 10px;
+}
+
+.large {
+  height: 24px;
+  font-size: $fMd;
+  padding: 20px;
+
+}
+
+.medium {
+  height: 20px;
+  font-size: $fSm;
+  padding: 15px;
+}

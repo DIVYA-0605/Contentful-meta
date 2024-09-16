@@ -1,0 +1,43 @@
+// @todo implement media queries for styles present in styles-lg.scss
+
+/**
+Import defaults variables
+ */
+@import "variables";
+
+@media (max-width: $smScreenSize) {
+  .sH1 {
+    font-size: $sH1FontSize;
+    line-height: 22px;
+  }
+
+  .sH2 {
+    font-size: $sH2FontSize;
+    line-height: 24px;
+  }
+
+  .sH3 {
+    font-size: $sH3FontSize;
+    line-height: 26px;
+  }
+
+  .sH4 {
+    font-size: $sH4FontSize;
+    line-height: 32px;
+  }
+
+  .sH5 {
+    font-size: $sH5FontSize;
+    line-height: 40px;
+  }
+
+  .sH6 {
+    font-size: $sH6FontSize;
+    line-height: 50px;
+  }
+
+  .sfMax {
+    font-size: $sfMax;
+    line-height: 60px;
+  }
+}

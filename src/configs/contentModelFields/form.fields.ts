@@ -1,0 +1,33 @@
+export const formFields = {
+    "Inline":[
+        "endpointUrl",
+        'header',
+        'formFields',
+        'footer',
+        'loadingMessage',
+        'successMessage',
+        'errorMessage',
+        'thankYouMessage'
+    ],
+    "Popup":[
+        "endpointUrl",
+        'header',
+        'formFields',
+        'footer',
+        'loadingMessage',
+        'successMessage',
+        'errorMessage',
+        'thankYouMessage'
+    ],
+    "MultiStep":[
+        "endpointUrl",
+        'header',
+        'formFields',
+        'footer',
+        'loadingMessage',
+        'successMessage',
+        'errorMessage',
+        'thankYouMessage'
+    ]
+  }
+  

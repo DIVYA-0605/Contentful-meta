@@ -1,0 +1,24 @@
+export const navigationHeaderFields =   {
+  "Sticky":[
+     "navigationMenuItems",
+     "ctaButton",
+     "isLightMode",
+  ],
+  "Non-Sticky":[
+     "navigationMenuItems",
+     "ctaButton",
+     "isLightMode",
+  ],
+  "Dropdown":[
+     "navigationMenuItems",
+     "ctaButton",
+     "isLightMode",
+  ],
+  "PrimaryHeader":[
+     "navigationMenuItems",
+     "ctaButton",
+     "isLightMode",
+     "isLoginHidden",
+     "isLanguageHidden"
+  ]
+}

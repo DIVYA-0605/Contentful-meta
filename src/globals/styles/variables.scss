@@ -1,0 +1,159 @@
+//Define global vars (eg. fonts, colours, paddings, margins, etc.) that are common to all the components here.
+
+$fonts: (
+        'Cambon Bold' :'Cambon-Bold',
+        'Cambon BoldItalic' :'Cambon-BoldItalic',
+        'Aeonik Regular':'Aeonik-Regular',
+        'Aeonik Medium':'Aeonik-Medium',
+  //"Aeonik Light":"Aeonik-Light",
+  //"Aeonik LightItalic":"Aeonik-LightItalic",
+  //"Aeonik RegularItalic":"Aeonik-RegularItalic",
+        'Aeonik Bold':'Aeonik-Bold',
+  //"Aeonik BoldItalic":"Aeonik-BoldItalic",
+);
+
+@function fontDir($fontFileName) {
+  @return ('../fonts/') + $fontFileName;
+}
+
+
+@mixin theFont($fontName,$fontFileName) {
+  font-family: $fontName;
+  src: url(fontDir($fontFileName + ('.woff'))) format('woff'),
+  url(fontDir($fontFileName + ('.woff2'))) format('woff2');
+}
+
+
+@each $fontName, $fontFileName in $fonts {
+  @font-face {
+    @include theFont($fontName, $fontFileName);
+  }
+}
+
+/**
+Breakpoints
+ */
+$mScreenSize: 1200px; // for selected components such as (ex - Heroes, Full width carousels, containers, etc.) width should be >= 1200.
+$smScreenSize: 733px; // screen size <= 733px is for mobile screen and screen size > 733px is for tablet/ desktop.
+
+
+/**
+ Fonts and families
+ */
+$serifFonts: Georgia, Serif;
+$fSerif: 'Cambon Bold', inspect($serifFonts);
+// $serifBrandItalicFonts: 'Cambon BoldItalic', inspect($serifFonts);
+
+$fSans: Arial, sans-serif;
+$fSansReg: 'Aeonik Regular', inspect($fSans);
+$fSansMed: 'Aeonik Medium', inspect($fSans);
+$fSansBld: 'Aeonik Bold', inspect($fSans);
+
+
+/**
+ Font sizes
+ */
+$fMin: 12px;
+$fSm: 14px;
+
+$fMd: 16px;
+
+$fLg: 20px;
+$fXl: 24px;
+
+
+/**
+ Heading font sizes for large screen
+ */
+$h6FontSize: $fMd;
+$h5FontSize: $fLg;
+$h4FontSize: $fXl;
+$h3FontSize: 32px;
+$h2FontSize: 42px;
+$h1FontSize: 64px;
+
+$fMax: 80px;
+
+
+/**
+ Heading font sizes for small screen
+ */
+$sH6FontSize: $fMd;
+$sH5FontSize: 18px;
+$sH4FontSize: $fLg;
+$sH3FontSize: $fXl;
+$sH2FontSize: 30px;
+$sH1FontSize: 40px;
+
+$sfMax: 50px;
+
+
+/**
+Primary colours
+ */
+ $cp1: #000b3d;
+ $cp2: #0028d7;
+ $cp3: #001c99;
+ $cp4: #8a8fa6;
+ $cp5: #333c64;
+ 
+ 
+ /**
+ Secondary colours
+  */
+ $cs1: #c9f344;
+ $cs2: #fff;
+ $cs3: #0082ab;
+ $cs4: #e6f9a9;
+ $cs5: #54661d;
+ $cs6: #8ecbd2;
+ $cs7: #000622;
+ 
+ /**
+ Neutral colours
+  */
+ 
+ //black
+ $cn1: #000;
+ 
+ // text - Primary
+ $cn2: #333;
+ 
+ // text - Secondary
+ $cn3: #757575;
+ 
+ // gray - 4
+ $cn4: #c6c6c6;
+ 
+ // gray - 3
+ $cn5: #efefef;
+ 
+ // gray - 2
+ $cn6: #f2f2f2;
+ 
+ // gray - 1
+ $cn7: #f9f9f9;
+ 
+ // white
+ $cn8: #fff;
+ 
+ /**
+ Accent colours
+  */
+ $ca1: #2cde93;
+ $ca2: #00ad23;
+ $ca3: #009980;
+ $ca4: #0674e8;
+ $ca5: #00268b;
+ $ca6: #854dff;
+ $ca7: #d04dff;
+ $ca8: #ff4dd5;
+ $ca9: #ff4d7c;
+ $ca10: #ff854d;
+ $ca11: #ff5f05;
+ $ca12: #e2222b;
+ 
+ /**
+ Overlay colours
+  */
+ $co1: #0a2c37;

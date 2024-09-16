@@ -1,0 +1,60 @@
+//Add SysIcon specific styles only...
+@use '../../../globals/styles/variables.scss' as *;
+
+/* Container for the SysIcon */
+.iconRoot {
+  /* Center the icon within the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /*overflow of the container will be hidden*/
+  //overflow: hidden;
+}
+
+.sm {
+  width: 30px;
+  height: 30px;
+}
+
+.smSvg {
+  width: 16px;
+  height: 16px;
+}
+
+.md {
+  width: 45px;
+  height: 45px;
+}
+
+.mdSvg {
+  width: 20px;
+  height: 20px;
+}
+
+.lg {
+  width: 60px;
+  height: 60px;
+}
+
+.lgSvg {
+  width: 24px;
+  height: 24px;
+}
+
+// specifically added for the application of CardIconLogo
+//todo : find  more use cases for this
+.xl {
+  width: 100px;
+  height: 100px;
+}
+
+.xlSvg {
+  width: 80px;
+  height: 80px;
+
+  @media screen and (max-width: $smScreenSize) {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,21 @@
+export const calloutFields = {
+  "CalloutStats":[
+     "heading",
+     "statsCard",
+     "isLightMode"
+  ],
+  "CalloutInfo":[
+     "subheading",
+     "heading",
+     "description",
+     "statsCard",
+     "isLightMode"
+  ],
+  "CalloutIcon":[
+     "subheading",
+     "heading",
+     "description",
+     "statsCard",
+     "isLightMode"
+  ]
+}

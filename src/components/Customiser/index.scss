@@ -1,0 +1,159 @@
+.css-4ixn9s {
+  padding: 0;
+}
+
+//search field
+.css-34wwhl {
+  //width: 100px;
+}
+
+.css-1hq6au8 {
+  max-height: 2rem;
+  padding-right: 0;
+}
+
+.css-ffes1r {
+  padding: 0;
+}
+
+.css-1yksgb3 {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.css-1lxwves {
+  padding: 8px 16px 8px 16px;
+}
+
+hr {
+  height: 1px;
+  background-color: rgb(207, 217, 224);
+  border: none;
+}
+
+
+.customiserRoot {
+  display: flex;
+  height: 100%;
+
+  .customiserInnerRoot {
+    width: 100%;
+    display: flex;
+
+    aside {
+      width: 330px;
+      background: rgb(247, 249, 250);
+      //padding: 16px;
+
+      .resizer {
+        border: 3px solid black;
+
+      }
+
+      .asideTopDiv {
+        padding: 16px 16px 0 16px;
+
+        .searchRoot {
+          margin-bottom: 12px;
+        }
+
+        .stylingRoot {
+          margin-bottom: 18px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .categoryRoot, .subCategoryRoot {
+        max-height: 250px;
+        overflow-y: scroll;
+
+        .subCategoryInner {
+          padding: 16px 0;
+
+          .css-1lxwves:hover {
+            background-color: rgba(207, 217, 224, .5);
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+          }
+        }
+
+        .categoryHeading {
+          margin: 0;
+          padding-left: 16px;
+        }
+
+        ul {
+          padding: 0;
+
+          li.active {
+            background-color: rgba(207, 217, 224, .5);
+          }
+
+          li {
+            list-style: none;
+            padding: 8px 16px 8px 16px;
+
+            &:hover {
+              background-color: rgba(207, 217, 224, .5);
+            }
+
+            a {
+              text-decoration: none;
+              color: black;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .tagsRoot {
+        padding: 16px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    main {
+      width: calc(100% - 330px);
+      height: 100%;
+
+      .previewRoot {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .footerInner {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+//below classes are for example remove later
+//.bg-red {
+//  background-color: red;
+//}
+//
+//.bg-yellow {
+//  background-color: yellow;
+//}
+//
+//.font-green {
+//  color: green;
+//}
+//
+//.font-blue {
+//  color: blue;
+//}

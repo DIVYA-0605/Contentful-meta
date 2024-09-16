@@ -1,0 +1,473 @@
+//Define global styles that are common to all the components here and then import it into every component.
+
+/**
+Import defaults variables
+ */
+@import "variables";
+
+
+/**
+Background styles
+ */
+
+ .bnone {
+  background: none;
+  }
+
+.bgTranslucent {
+  backdrop-filter: blur(1rem);
+  }
+
+.bgTransparent {
+  background-color: transparent;
+  }
+
+.bp1 {
+  background-color: $cp1;
+  }
+
+.bp2 {
+  background-color: $cp2;
+  }
+
+.bs1 {
+  background-color: $cs1;
+  }
+
+.bs2 {
+  background-color: $cs2;
+  }
+
+.bs3 {
+  background-color: $cs3;
+  }
+
+.bs4 {
+  background-color: $cs7;
+  }
+
+.bs5 {
+  background-color: $cs5;
+  }
+
+.bn1 {
+  background-color: $cn1;
+  }
+
+.bn2 {
+  background-color: $cn2;
+  }
+
+.bn3 {
+  background-color: $cn3;
+  }
+
+.bn4 {
+  background-color: $cn4;
+  }
+
+.bn5 {
+  background-color: $cn5;
+  }
+
+.bn6 {
+  background-color: $cn6;
+  }
+
+.bn7 {
+  background-color: $cn7;
+  }
+
+/**
+Colours
+ */
+
+.cp1 {
+  color: $cp1;
+  }
+
+.cp2 {
+  color: $cp2;
+  }
+
+.cp3 {
+  color: $cp3;
+  }
+
+.cp4 {
+  color: $cp4;
+  }
+
+.cp5 {
+  color: $cp5;
+  }
+
+.cs1 {
+  color: $cs1;
+  }
+
+.cs2 {
+  color: $cs2;
+  }
+
+.cs3 {
+  color: $cs3;
+  }
+
+.cn1 {
+  color: $cn1;
+  }
+
+.cn2 {
+  color: $cn2;
+  }
+
+.cn3 {
+  color: $cn3;
+  }
+
+.cn4 {
+  color: $cn4;
+  }
+
+.cn5 {
+  color: $cn5;
+  }
+
+.cn6 {
+  color: $cn6;
+  }
+
+.cn7 {
+  color: $cn7;
+  }
+
+.cn8 {
+  color: $cn8;
+  }
+
+/**
+Gradients
+ */
+.bs1s3d {
+  background: linear-gradient(45deg, $cs1, $cs3);
+  }
+
+.bs1s3h {
+  background: linear-gradient(90deg, $cs1, $cs3);
+  }
+
+.bo1n1d {
+  background: linear-gradient(45deg, $co1, $cn1);
+  opacity: 0.6;
+  }
+
+.cs1s3d {
+  background: -webkit-linear-gradient(45deg, $cs1, $cs3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+.cs1s3h {
+  background: -webkit-linear-gradient(90deg, $cs1, $cs3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+
+/**
+FontFamilies
+ */
+.fSerif {
+  font-family: $fSerif;
+}
+
+.fSansBld {
+  font-family: $fSansBld;
+}
+
+.fSansReg {
+  font-family: $fSansReg;
+}
+
+.fSansMed {
+  font-family: $fSansMed;
+}
+
+.fSans {
+  font-family: $fSans;
+}
+
+
+/**
+FontSized
+ */
+.fMin {
+  font-size: $fMin;
+}
+
+.fSm {
+  font-size: $fSm;
+}
+
+.fMd {
+  font-size: $fMd;
+}
+
+.fLg {
+  font-size: $fLg;
+}
+
+.fXl {
+  font-size: $fXl;
+}
+
+
+/**
+Borders
+ */
+.bdr {
+  border-width: 1px;
+
+  &.solid {
+    border-style: solid;
+  }
+
+  &.dashed {
+    border-style: dashed;
+  }
+
+  &.transparent {
+    border: transparent;
+  }
+
+  &.translucent {
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+    background: linear-gradient(45deg, rgba(0, 150, 255, .15), rgba(250, 255, 155, .15));
+  }
+
+  &.thick {
+    border-width: 16px; //implement according to breakpoints
+  }
+}
+
+
+/**
+Edges
+ */
+.rounded {
+  &.min {
+    border-radius: 5px;
+  }
+
+  &.s {
+    border-radius: 10px;
+  }
+
+  &.m {
+    border-radius: 15px;
+  }
+
+  &.l {
+    border-radius: 20px;
+  }
+
+  &.xl {
+    border-radius: 25px;
+  }
+
+  &.max {
+    border-radius: 500px;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //height: 100vh;
+  //width: 100%;
+  font-family: $fSansReg;
+  //gap: 3rem;
+}
+
+h1,
+h2 {
+  @extend .fSerif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  @extend .fSansBld
+}
+
+h1 {
+  font-size: $h1FontSize;
+  line-height: 74px;
+}
+
+h2 {
+  font-size: $h2FontSize;
+  line-height: 52px;
+}
+
+h3 {
+  font-size: $h3FontSize;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: $h4FontSize;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: $h5FontSize;
+  line-height: 26px;
+}
+
+h6 {
+  font-size: $h6FontSize;
+  line-height: 22px;
+}
+
+.h1 {
+  @extend .fSerif;
+  @extend h1;
+}
+
+.h2 {
+  @extend h2;
+}
+
+.h3 {
+  @extend h3;
+}
+
+.h4 {
+  @extend h4;
+}
+
+.h5 {
+  @extend h5;
+}
+
+.h6 {
+  @extend h6;
+}
+
+.fMax {
+  font-size: $fMax;
+}
+
+
+.subheading {
+  font-size: $fMd;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  // color: $cp2;
+  font-family: $fSans;
+}
+
+/**
+Padding
+ */
+
+.p0 {
+  padding: 0;
+}
+
+/**
+margin
+ */
+
+.m0 {
+  margin: 0;
+}
+
+/**
+p tag margin 0
+ */
+
+p {
+  margin: 0;
+}
+
+
+/**
+Shadows
+ */
+.shadow {
+
+  &.shadow1 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+  }
+
+  &.shadow2 {
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 7px 0;
+  }
+
+  &.shadow3 {
+    box-shadow: rgba(10, 44, 55, 0.10) 0 5px 10px 1px;
+  }
+}
+
+//@todo change color name from defaults
+.interactive {
+  &:hover {
+    //@extend .bn5
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: dashed 2px $cp2;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.dNone {
+  display: none !important;
+}
+
+.highlight {
+}
+
+.hotspot {
+}
+
+.draggable {
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.simpleBtn:hover .arrowHead, .link:hover .arrowHead {
+  transform: translateX(3px);
+}
+
+.simpleBtn:hover .arrowBody, .link:hover .arrowBody {
+  opacity: 1;
+  transform: scaleX(2);
+}

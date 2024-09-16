@@ -1,0 +1,16 @@
+import { Canvas, Meta, Markdown, Story, Controls } from '@storybook/blocks';
+import * as DropdownEditorStories from '../stories/DropdownEditor.stories';
+
+import Readme from '../README.md?raw';
+
+<Markdown>{Readme}</Markdown>
+
+<Meta of={DropdownEditorStories} />
+
+## In Action
+
+<Story of={DropdownEditorStories.Default} />
+
+## Props
+
+<Controls />

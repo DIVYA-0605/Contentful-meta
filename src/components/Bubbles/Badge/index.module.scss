@@ -1,0 +1,31 @@
+// importing global variables
+@use '../../../globals/styles/variables' as *;
+
+.badgeRoot {
+  display: flex;
+  /* Use flex layout for the badge */
+  justify-content: center;
+  /* Center horizontally within the container */
+  align-items: center;
+  /* Center vertically within the container */
+  text-align: center;
+  /* Center text within the badge */
+  min-width: 35px;
+  /* Set the initial width of the badge */
+  aspect-ratio: 1/1;
+  /* Set the initial height of the badge */
+
+  /* Background color for the badge */
+  border-radius: 50%;
+  /* Create a circular badge using border-radius */
+  padding: 5px;
+  ///* Padding around the badge's content */
+  font-size: $fMd;
+  /* Use the font size from the imported global variable */
+
+  /* Media query for screens with a maximum width of 733px */
+  @media (max-width: 733px) {
+    min-width: 30px;
+    /* Reduce the width for smaller screens */
+  }
+}
